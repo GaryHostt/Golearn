@@ -7,6 +7,7 @@ import (
         "log"
         "strconv"
         "os"
+        "net/http"
 
 )
 
@@ -42,6 +43,11 @@ func main() {
     go forever()
     select {} // block forever
 
+}
+
+func init() {
+    go lib.GetStockData()
+    http.HandleFunc("/", lib.StocksHandler)
 }
 
 
