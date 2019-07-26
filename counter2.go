@@ -10,10 +10,6 @@ import (
 
 )
 
-func main() {
-        appengine.Main()
-}
-
 
 func timeTrack(start time.Time, name string) {
     elapsed := time.Since(start)
@@ -21,6 +17,7 @@ func timeTrack(start time.Time, name string) {
 }
 
 func main() {
+        appengine.Main()
     start := time.Now()
 
     fmt.Printf("1\n")
