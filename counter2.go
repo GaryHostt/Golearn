@@ -5,6 +5,11 @@ import "time"
 import "log"
 import "strconv"
 import "os"
+import "google.golang.org/appengine"
+
+func main() {
+        appengine.Main()
+}
 
 func timeTrack(start time.Time, name string) {
     elapsed := time.Since(start)
