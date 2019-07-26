@@ -2,6 +2,11 @@ package main
 
 import (
         "google.golang.org/appengine"
+        "ftm"
+        "time"
+        "log"
+        "strconv"
+        "os"
 
 )
 
@@ -9,11 +14,6 @@ func main() {
         appengine.Main()
 }
 
-import "fmt"
-import "time"
-import "log"
-import "strconv"
-import "os"
 
 func timeTrack(start time.Time, name string) {
     elapsed := time.Since(start)
