@@ -11,12 +11,12 @@ func timeTrack(start time.Time, name string) {
 }
 
 func main() {
+    start := time.Now()
+
     fmt.Printf("1\n")
     fmt.Printf("2\n")
     fmt.Printf("3\n")
     fmt.Printf("4\n")
-
-    start := time.Now()
 
         const name, age = "Kim", 22
     n, err := fmt.Fprintln(os.Stdout, name, "is", age, "years old.")
