@@ -21,6 +21,6 @@ env: flex
 
 
 network:
- forwarded_ports:
+  forwarded_ports:
   	- 8080
     - 8080/tcp
