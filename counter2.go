@@ -48,14 +48,6 @@ func main() {
 
 }
 
-func handle(w http.ResponseWriter, r *http.Request) {
-        if r.URL.Path != "/" {
-                http.NotFound(w, r)
-                return
-        }
-        fmt.Fprint(w, "Hello world!")
-}
-
 
 func stringToInt(str string) int {
     i, err := strconv.Atoi(str)
